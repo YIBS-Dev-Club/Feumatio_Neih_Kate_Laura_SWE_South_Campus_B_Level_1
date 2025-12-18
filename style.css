@@ -58,3 +58,6 @@ input {
     font-size: 16px;
     cursor: pointer;
 }
+button {
+    background-color: rgb(250, 248, 247);
+}
