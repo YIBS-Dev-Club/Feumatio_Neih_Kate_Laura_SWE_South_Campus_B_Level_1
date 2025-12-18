@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="regForm" action="form.php">
+
+        <div class="form-contianer">
+            <h1>VALIDATION REGISTRATION FORM</h1>
+
+        <label for=""><b>Full name</b>:</label><br>
+            <input type="text" name="Student's name" id="Student's name" placeholder="Enter your name"><br>
+
+             <label for=""><b>Email Address:</b> </label><br>
+            <input type="email" name=">Email" id=">Email" placeholder="you@gmail.com"> <br>
+
+            <label for=""><b>Password:</b> </label><br>
+            <input type="password" name="Password" id="Password" placeholder="Enter your password"><br>
+
+            <label for=""><b>Confirm password:</b> </label><br>
+            <input type="password" name="Confirm password" id="Confirm password" placeholder="Confirm your password"><br>
+
+
+            <label for=""><b>Telephone number:</b> </label><br>
+            <input type="number" name="telephone number" id="telephone number" placeholder="e.g +237 6666 666 666"><br>
+
+        
+        <label for=""><b>Date of birth:</b></label><br>
+            <input type="date" name="date" id=""><br>
+
+        <label for="department"><b>Department:</b></label>
+         <select id="department">
+        
+            <option value="">Choose your department</option>
+            <option value="SWE">Software engineering</option>
+            <option value="SWE">E-commerce and digital marketing</option>
+            <option value="SWE">Computer network</option>
+            <option value="SWE">Computer graphics</option>
+            <option value="SWE">Network and security</option>
+        </select><br>
+        <div class="form-group gender-group">
+            <label><b>Gender:</b></label>
+            <div class="options">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <div class="form-group personality-group">
+            <label><b>Personality:</b></label>
+            <div class="options">
+                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <script>
+            (function(){
+                const form = document.getElementById('regForm');
+                form.addEventListener('submit', function(e){
+                    const personalityChecked = form.querySelectorAll('input[name="personality"]:checked');
+                    if(personalityChecked.length === 0){
+                        e.preventDefault();
+                        alert('Please select at least one Personality option.');
+                        const firstCheckbox = form.querySelector('input[name="personality"]');
+                        if(firstCheckbox) firstCheckbox.focus();
+                    }
+                });
+            })();
+        </script>
+</body>
+</html>

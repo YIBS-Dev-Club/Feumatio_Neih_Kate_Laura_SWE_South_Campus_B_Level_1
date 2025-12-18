@@ -1,0 +1,60 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.form-contianer  {
+    width: 500px;
+    min-height: 600px;
+    background-color: rgb(239, 206, 220);
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding:15px;
+}
+h1 {
+    color: rgb(3, 0, 0);
+    text-align: center;
+}
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+}
+input {
+    margin-bottom: 15px;
+}
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.options label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.options input[type="radio"], .options input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.form-actions button {
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
