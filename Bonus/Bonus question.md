@@ -42,7 +42,7 @@
 # 5. Pull From a Branch
 
 ## Image below
-![Create repo](screenshots/creating%20pull%20request.png)
+![Create repo](screenshots/git%20pull.png)
 
     If someone else (or you, from another computer) has updated the branch on GitHub, you need to sync your local files:
 - git Ensure you are on the correct branch:
