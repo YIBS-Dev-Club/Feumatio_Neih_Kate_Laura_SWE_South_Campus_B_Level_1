@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+</body>
+</html>
+1. Create a GitHub Repository
+Log in to your GitHub account
+Click the + icon in the top-right corner and select New repository.
+Give your repository a name e.g Feumatio-neih-kate-laura
+Choose Public or Private. Public is better
+(Optional) Check "Add a README file" to initialize it immediately.
+Click Create repository.
+2. Create a New Branch (On GitHub)
+git checkout -b your-branch-name
+3. Clone the Specific Branch
+	To bring the repository to your computer and start working specifically on that new branch:
+Click the green <> Code button and copy the HTTPS URL.
+Open your terminal or command prompt and run:
+git clone -b feature-branch https://github.com/username/repository-name.git
+4. Push Changes to the Branch
+	Once you have made changes to your files locally, follow these steps to send them back to GitHub:
+git add .
+Commit your changes:
+git commit -m "Describe what you changed"
+git push origin feature-branch
+5. Pull From a Branch
+If someone else (or you, from another computer) has updated the branch on GitHub, you need to sync your local files:
+Ensure you are on the correct branch:
+git checkout feature-branch
+Pull the updates:
+git pull origin feature-branch
