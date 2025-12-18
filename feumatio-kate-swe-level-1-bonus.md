@@ -20,7 +20,7 @@ Click Create repository.
 - git push origin feature-branch
 # 5. Pull From a Branch
     If someone else (or you, from another computer) has updated the branch on GitHub, you need to sync your local files:
-- Ensure you are on the correct branch:
+- git Ensure you are on the correct branch:
 - git checkout feature-branch
 - Pull the updates:
 - git pull origin feature-branch
