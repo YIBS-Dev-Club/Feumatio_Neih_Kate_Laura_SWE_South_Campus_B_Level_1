@@ -3,8 +3,10 @@
 -  Click the + icon in the top-right corner and select New repository.
 -  Give your repository a name e.g Feumatio-neih-kate-laura
 -  Choose Public or Private. Public is better
-(Optional) Check "Add a README file" to initialize it immediately.
-Click Create repository.
+- (Optional) Check "Add a README file" to initialize it immediately.
+- Click Create repository. 
+
+
  # 2. Create a New Branch (On GitHub)
 -  git checkout -b your-branch-name
 # 3. Clone the Specific Branch
